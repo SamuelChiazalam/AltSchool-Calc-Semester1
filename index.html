@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple_Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body> 
+    <div class="calculator-wrapper">
+    <div class="calculator">
+
+      <!-- Input section -->
+      <div id="display" class="display">0</div>
+      <!-- Buttons -->
+      <div class="buttons">
+        <!-- Row 1 -->
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn operator">×</button>
+
+        <!-- Row 2 -->
+        <button class="btn operator">÷</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+
+        <!-- Row 3 -->
+        <button class="btn operator">+</button>
+        <button class="btn operator">-</button>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+
+        <!-- Row 4 -->
+        <button class="btn operator">%</button>
+        <button class="btn operator">^</button>
+        <button class="btn">.</button>
+        <button class="btn">0</button>
+        <button class="btn" id="clear">⌫</button>
+
+        <!-- Row 5 -->
+        <button class="btn clear" id="clearAll">C</button>
+        <button class="btn equal" id="equals">=</button>
+      </div>
+    </div>
+    <!-- History button was placed down to aid responsiveness on small devices (eg: Mobile) -->
+    <button id="toggleHistory" title="Click to display previous calculations" class="btn history-btn">History</button>
+    <div id="history" class="history" style="display:none;"></div>
+  </body>
+</html>
